@@ -1,0 +1,74 @@
+:root {
+  --clr-light: #ffffff;
+  --clr-med: #d7dfe2;
+  --clr-dark: #90a4ae;
+  --clr-dark-heavy: #546e7a;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-weight: lighter;
+  background-color: var(--clr-med);
+  margin: 0;
+  padding: 0;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 38px;
+  width: 300px;
+  padding: 2rem;
+  border-radius: 4rem;
+  margin: auto;
+  color: var(--clr-dark-heavy);
+  background: var(--clr-med);
+  box-shadow: 
+  -5px -5px 10px var(--clr-light),
+  5px 5px 10px var(--clr-dark);
+}
+
+a {
+  text-decoration: none;
+  color: var(--clr-dark);
+  background: var(--clr-med);
+  margin: auto;
+  margin-top: 2rem;
+  padding: 2rem;
+  font-size: 24px;
+  border-radius: 100px;
+  box-shadow: 
+  -5px -5px 10px var(--clr-light),
+  5px 5px 10px var(--clr-dark),
+  inset -5px -5px 10px var(--clr-light),
+  inset 5px 5px 10px var(--clr-dark);
+  top: 50%;
+  left: 50%;
+  transition:linear 300ms;
+}
+
+
+a:hover {
+  color: var(--clr-dark-heavy);
+  box-shadow: 
+  -5px -5px 10px var(--clr-light),
+  5px 5px 10px var(--clr-dark);
+}
+
+a:active {
+  transition: 1ms;
+  color: var(--clr-dark);
+  box-shadow: 
+  0px 0px 0px var(--clr-light),
+  0px 0px 0px var(--clr-dark),
+  inset -5px -5px 10px var(--clr-light),
+  inset 5px 5px 10px var(--clr-dark);
+}
